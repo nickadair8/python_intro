@@ -1,12 +1,26 @@
 import random
 from enum import Enum
 
-#Tuples
-names = ("Nick", "Will")
-names[0]
-names.index("Nick")
+#sets
+set1 = {"Roger", "Syd"}
+set2 = {"Roger"}
+intersect = set1 & set2
+union = set1 | set2
+print(union)
+print(list(set1))
 
-pri
+# dictionaries
+# dog = {"name": "Roger", "age": 8}
+# dog["name"] = "Syd"
+# dog["fav food"] = "meat"
+# print("name" in dog)
+# print(list(dog.items()))
+
+
+#Tuples
+# names = ("Nick", "Will", "Adam")
+# sorted(names)
+# print(names)
 
 # lists
 # dogs = ["Malibu", "Marley", "Mae Mo"]
