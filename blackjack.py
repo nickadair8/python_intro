@@ -1,8 +1,21 @@
-rank = "K"
-value = 10
+import random
+
+cards = []
 suits = ["kings", "hearts", "diamonds", "clubs"]
-suit = suits[1]
-print("Your card is: " + rank + " of " + suit)
-suits.append("snakes")
+ranks = ["A", "2", "3", "4","5","6","7","8","9","10","J","Q","K"]
 for suit in suits:
-    print(suit)
+    for rank in ranks:
+        cards.append([suit, rank])
+
+def shuffle():
+    random.shuffle(cards)
+
+def deal(number):
+    cardsDealt = []
+    for x in range(number):
+        cardsDealt.append(cards.pop())
+    return cardsDealt
+
+shuffle()
+
+card = deal(1)[0]
